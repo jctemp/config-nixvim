@@ -31,9 +31,13 @@
         java-language-server.enable = true;
         jsonls.enable = true;
         marksman.enable = true;
-        nil_ls = {
+        # nil_ls = {
+        #   enable = true;
+        #   settings.formatting.command = ["alejandra"];
+        # };
+        nixd = {
           enable = true;
-          settings.formatting.command = ["alejandra"];
+          settings.formatting.command = "alejandra";
         };
         prolog-ls.enable = true;
         pyright.enable = true;
