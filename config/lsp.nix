@@ -31,15 +31,10 @@
         java-language-server.enable = true;
         jsonls.enable = true;
         marksman.enable = true;
-        # nil_ls = {
-        #   enable = true;
-        #   settings.formatting.command = ["alejandra"];
-        # };
-        nixd = {
+        nil_ls = {
           enable = true;
-          settings.formatting.command = "alejandra";
+          settings.formatting.command = ["alejandra"];
         };
-        prolog-ls.enable = true;
         pyright.enable = true;
         rust-analyzer = {
           enable = true;
@@ -49,12 +44,6 @@
             checkOnSave = true;
             check.command = "clippy";
             procMacro.enable = true;
-            # inlayHints = {
-            #   enable = true;
-            #   showParameterNames = true;
-            #   parameterHintsPrefix = "<- ";
-            #   otherHintsPrefix = "=> ";
-            # };
           };
         };
         tailwindcss.enable = true;
